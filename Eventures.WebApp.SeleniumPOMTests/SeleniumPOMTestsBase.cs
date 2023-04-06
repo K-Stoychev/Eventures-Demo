@@ -30,7 +30,7 @@ namespace Eventures.WebApp.SeleniumPOMTests
             // Setup the ChromeDriver
             var chromeOptions = new ChromeOptions();
             if (!Debugger.IsAttached)
-                chromeOptions.AddArguments("--headless");
+                chromeOptions.AddArguments("headless");
             this.driver = new ChromeDriver(chromeOptions);
 
             // Set an implicit wait for the UI interaction
